@@ -1,0 +1,1026 @@
+<!DOCTYPE HTML>
+<!--
+    Industrious by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+<head>
+    <title>Infralogix Software</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <style>
+       
+        .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: white;
+            overflow: hidden;
+        }
+
+        .audioplayer {
+            height: 2.5em; /* 40 */
+            color: #fff;
+            background: #333;
+            position: relative;
+            z-index: 1;
+        }
+
+        #myimg {
+            cursor: pointer;
+            padding: 15px;
+            max-width: 160px;
+            width: 290px;
+            height: 110px;
+            background-size: contain;
+            background-position: 50%;
+            background-repeat: no-repeat;
+            background-color: transparent;
+            cursor: pointer;
+            overflow: hidden;
+            outline: none;
+            border: none;
+            text-decoration: none;
+            outline: 0;
+            resize: none;
+            border: none !important;
+        }
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            background: url("images/Splash_Whatsapp_Icon_avkvqz.png");
+            cursor: pointer;
+            padding: 15px;
+            max-width: 120px;
+            width: 140px;
+            height: 110px;
+            background-size: contain;
+            background-position: 50%;
+            background-repeat: no-repeat;
+            background-color: transparent;
+            cursor: pointer;
+            overflow: hidden;
+            outline: none;
+            border: none;
+            text-decoration: none;
+            outline: 0;
+            resize: none;
+            border: none !important;
+        }
+        /*Styling End*/
+        /*<-==========================================->*/
+        div.hero-img {
+            text-align: center;
+            margin: 10px auto;
+        }
+
+        .MCAlignHref {
+            color: #fff;
+            text-align: center;
+        }
+
+        .MCcopywrap {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .arrrow-down, .CheckShow, .MCnavMb {
+            display: none;
+        }
+
+        .mbAbbvieBtn, #mbReadMore {
+            color: #fff;
+        }
+
+        .ReadMore {
+            position: relative;
+            width: 96%;
+            margin: 1.6%;
+            height: 100%;
+        }
+
+        .CheckShow {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .MCFaqBtn {
+            background: linear-gradient(#fff,#fff) padding-box, linear-gradient( 90deg, #ddd,#fff) border-box;
+            border-width: 3px;
+            border-style: solid;
+            border-color: transparent;
+            border-radius: 12px;
+            display: inline-block;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: inherit;
+            font-weight: 600;
+            box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
+            color: #000;
+            text-align: center;
+            padding: 12px;
+        }
+
+        #mbReadMore {
+            background: linear-gradient(#fff,#fff) padding-box, linear-gradient( 90deg, #ddd,#fff) border-box;
+            border-width: 3px;
+            border-style: solid;
+            border-color: transparent;
+            border-radius: 12px;
+            padding: 10px;
+            display: none;
+            box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
+            border-top: 0;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            color: #000;
+        }
+
+        .ReadMore .arrrow-down {
+            transform: rotate(90deg);
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            right: 20px;
+            top: 15px;
+            pointer-events: none;
+        }
+       
+
+        .ReadMore .CheckShow:checked ~ p #mbReadMore {
+            display: block;
+        }
+
+        .ReadMore .CheckShow:checked ~ p .MCFaqBtn {
+            border-bottom: 0;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .ReadMore .CheckShow:checked ~ p .arrrow-down {
+            transform: rotate(270deg);
+        }
+
+        .MCwrapped p {
+            color: #fff;
+        }
+
+        #footer, .wrapper {
+            padding: 3rem 0 3rem 0;
+            background: #2c2c30;
+        }
+        #header , #menu{
+            background: #2c2c30;
+        }
+
+        div .hero-img img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .MCImgwrap {
+            display: inline-block;
+            width: 47%;
+            margin: 50px auto;
+            height: 265px;
+            float: left;
+        }
+
+        .MCImgwrapAdj {
+            height: 265px;
+            width: 45%;
+            margin: 0 auto;
+        }
+
+        .MCImgwrap2, .MCImgwrapAdj2 {
+            width: 265px;
+            float: unset;
+        }
+
+        .content {
+            margin: 20px auto;
+        }
+
+        .MCReadMoreH1 {
+            font-weight: 600;
+            font-size: 1.2em;
+        }
+
+        .MCLiner, .MCReadMoreH1 {
+            width: 96%;
+            display: inline-block;
+            margin: 4px auto;
+            text-align: left;
+        }
+
+        .MClistItem, .MClistItem2 {
+            display: list-item;
+            width: 85%;
+            margin: 0 auto 0 auto;
+        }
+        .MClistItem2{
+            display:inline-block;
+            margin: 0 7.5%;
+        }
+
+        .MCReadMoreH1 {
+            text-align: center;
+        }
+        .MCcopywrap2 {
+            background: #2c2c30;
+            padding:1em;
+        }
+        /*Styling End*/
+        /*<-==========================================->*/
+        /*Media Queries Begin*/
+        /*<-==========================================->*/
+        @media (max-width: 600px) {
+            #menu, .MCMenu, ul.plain li span {
+                display: none;
+            }
+
+            .MCnavMb {
+                display: block;
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                background: #2c2c30;
+                width: 100%;
+                z-index: 999;
+            }
+
+                .MCnavMb .MCNavwarp {
+                    color: #fff;
+                    display: inline-block;
+                    padding: 0.5em;
+                    text-align: center;
+                }
+
+            #footer, .wrapper {
+                padding: 1rem 0 1rem 0;
+            }
+
+            .MCNavwarp span a {
+                color: #fff;
+                font-size: 18px;
+                text-decoration: none;
+            }
+
+            .MCtextNav {
+                padding: 0 5px;
+                display: inline-block;
+                width: 100%;
+            }
+
+            .MCFaqBtn .MCtextNav a {
+                text-decoration: none;
+                font-size: 14px;
+            }
+
+            ul.plain li {
+                display: inline-block;
+            }
+
+            .MCImgwrap, .MCImgwrapAdj2, .MCImgwrapAdj {
+                width: 100%;
+                height: unset;
+            }
+
+            .content {
+                margin: 0 auto;
+            }
+
+            .MCcopywrap2 {
+                padding-bottom: 6em;
+            }
+        }
+        /*Media Queries End*/
+        /*<-==========================================->*/
+    </style>
+</head>
+
+
+<body class="is-preload">
+    <!--<image src="images/Splash_Whatsapp_Icon_avkvqz.png" onclick="topFunction()" id="myBtn"></image>-->
+    <!-- Header -->
+    <header id="header">
+        <a class="logo" href="index.html">Infralogix Systems</a>
+        <nav class="MCMenu">
+            <a href="#menu">Menu</a>
+        </nav>
+    </header>
+    <!-- Nav -->
+    <nav id="menu">
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="elements.html">Elements</a></li>
+            <li><a href="generic.html">Generic</a></li>
+        </ul>
+    </nav>
+    <div class="MCnavMb">
+        <div class="MCcopywrap">
+            <div class="MCNavwarp">
+                <span> <a class="active" href="index.html"><i class="fa fa-home"></i></a> </span>
+                <span class="MCtextNav"><a href="index.html">Home</a></span>
+                <span></span>
+            </div>
+            <div class="MCNavwarp">
+                <span> <a href="elements.html"><i class="fa fa-object-group"></i></a> </span>
+                <span class="MCtextNav"><a href="elements.html">Elements</a></span>
+            </div>
+            <div class="MCNavwarp">
+                <span> <a href="generic.html"><i class="fa fa-cubes"></i></a> </span>
+                <span class="MCtextNav"><a href="generic.html">Generic</a></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Banner -->
+    <section id="banner">
+        <div class="inner">
+            <h1>Infralogix Systems </h1>
+            <p>Ever Evolving</p>
+        </div>
+        <video autoplay loop muted playsinline>
+            <source src="images/banner.mp4" type='video/mp4; codecs="av01.0.00M.08, opus"'>
+            <source src="images/banner.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
+            <source src="vp9.webm" type='video/webm; codecs="vp9.0, opus"'>
+            <source src="images/old.ogg" type='video/ogg; codecs="theora, vorbis"'>
+            Your browser does not support the video tag.
+        </video>
+
+    </section>
+
+    <Section id="footer">
+        <div class="inner">
+            <div class="content">
+                <section>
+                    <h3>Welcome To Infralogix Systems</h3>
+                    <p>Infralogix Systems is a technology company that is highly dynamically driven to provide cctv services , bespoke software development, our goal is to provide systems and service which exceeds our customers expectations enabling better operation and efficiency in service. We are a goal orientated and highly ambitious software development company providing cutting edge technologies, and actively seeking extreme challenges in the technologies our bussiness partners and clients provide to us. Infralogix Systems values in innovation creativity and adding value and being part of the client's success.</p>
+                </section>
+                <section>
+                    <h4>Services</h4>
+                    <ul class="alt">
+                        <li><a href="http://infralogix.scribble.co.za/Default.asp">Security surveilance CCTV </a></li>
+                        <li><a href="#">Home Automation</a></li>
+                        <li><a href="web.html">Website Development</a></li>
+                        <li><a href="#">Bespoke Software Development</a></li>
+                        <li><a href="#">AI Automation Systems</a></li>
+                    </ul>
+                </section>
+            </div>
+
+            <h4>Social Media Interactive</h4>
+            <ul class="plain">
+                <li><a href="#"><i class="icon fa-twitter">&nbsp;</i><span>Twitter</span></a></li>
+                <li><a href="#"><i class="icon fa-facebook">&nbsp;</i><span>Facebook</span></a></li>
+                <li><a href="#"><i class="icon fa-instagram">&nbsp;</i><span>Instagram</span></a></li>
+                <li><a href="#"><i class="icon fa-github">&nbsp;</i><span>Github</span></a></li>
+                <li><a href="#"><i class="icon fa-phone">&nbsp;</i><span>0658122232</span></a></li>
+            </ul>
+        </div>
+
+    </Section>
+
+    <section id="cta" class="wrapper">
+        <div class="inner">
+            <h2>Infralogix Software Systems</h2>
+            <p>We Provide Software solutions for all your bespoke software development</p>
+        </div>
+    </section>
+    <section id="footer">
+
+        <div class="inner">
+            <h3>What we do</h3>
+            <p>We offer bespoke software solutions tailored to the exact requirements of your company, Custom software applications represents a better choice than the standard solutions. We specifically design bespoke softwrae that is unique to you. Your systesm/software can be fully integrated with your processes, with the exact feature that you need,and exactly the way you want it to work and function. We offer multi-tier architecture, that is scalable solutions as bespoke software is specifically designed with the long term IT plans of your company. We offer and a provider of a full package of software consultancy services, software design servicxes, IT outsourcing, development services, software design services,Company out sourcing bespoke website solutions & computing ect.</p>
+            <div class="hero-img mb-md50 MCImgwrapAdj">
+                <img src="images/pico1.jpg" alt="">
+            </div>
+        </div>
+
+    </section>
+    <!-- end of abo
+
+    <!-- Highlights -->
+    <section class="wrapper">
+        <div class="inner">
+            <header class="special">
+                <h2>Infralogix Systems Software Solutions</h2>
+                <p>We offer the following software solutions system development software solutions</p>
+            </header>
+            <div class="highlights">
+                <section>
+                    <div class="content">
+                        <header>
+                            <a href="#" class="icon fa-vcard-o"><span class="label">Icon</span></a>
+                            <h3>Web-Development</h3>
+                        </header>
+                        <p style="color:white;">Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="content">
+                        <header>
+                            <a href="#" class="icon fa-files-o"><span class="label">Icon</span></a>
+                            <h3>Website Development</h3>
+                        </header>
+                        <p style="color:white;">Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="content">
+                        <header>
+                            <a href="#" class="icon fa-floppy-o"><span class="label">Icon</span></a>
+                            <h3>E-Commerce</h3>
+                        </header>
+                        <p style="color:white;">Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="content">
+                        <header>
+                            <a href="#" class="icon fa-line-chart"><span class="label">Icon</span></a>
+                            <h3>Cms</h3>
+                        </header>
+                        <p style="color:white;">Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="content">
+                        <header>
+                            <a href="#" class="icon fa-paper-plane-o"><span class="label">Icon</span></a>
+                            <h3>Software Development</h3>
+                        </header>
+                        <p style="color:white;">Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="content">
+                        <header>
+                            <a href="#" class="icon fa-qrcode"><span class="label">Icon</span></a>
+                            <h3>Analytics</h3>
+                        </header>
+                        <p style="color:white;">Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="content">
+                        <header>
+                            <a href="#" class="icon fa-paper-plane-o"><span class="label">Icon</span></a>
+                            <h3>Hosting</h3>
+                        </header>
+                        <p style="color:white;">Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="content">
+                        <header>
+                            <a href="#" class="icon fa-qrcode"><span class="label">Icon</span></a>
+                            <h3>Cloud Based Design</h3>
+                        </header>
+                        <p style="color:white;">Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="content">
+                        <header>
+                            <a href="#" class="icon fa-qrcode"><span class="label">Icon</span></a>
+                            <h3>SEO</h3>
+                        </header>
+                        <p style="color:white;">Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+
+    <section id="ctamain" class="wrapper">
+        <div class="inner">
+            <h2>Technologies</h2>
+            <p>
+                Infralogix Systems embraces latest technologies and supporting development and creativity.
+
+                In fralogix Systems creates bespoke systems using c# and .Net technologies, application integration
+
+                Using the latest technologies, C#,ASP.NET MVC, T-SQL and MS SQL to develop technical solutions for complex problems.
+
+                We also utilize other proven technologies such as in development include Javascript Frameworks and Libraries, Object Mapping technologies, N-Tier and N-Layeredarchitetcure, Microsoft Open Web Interface and WCF (NServiceBus) , Restfull Services
+            </p>
+        </div>
+
+    </section>
+
+    <section class="wrapper">
+        <div class="inner">
+            <header class="special">
+                <h2>CUSTOM WEB APPLICATION DEVELOPMENT SERVICES</h2>
+                <p>The approach we follow involves first getting an understanding of what the client is looking to achieve—and then coming up with options on how to achieve using relevant technologies and processes.</p>
+                <p>We make the application development process smooth and create value-driven and complex web products.</p>
+            </header>
+            <div class="highlights">
+                <section>
+                    <div class="content">
+                        <header>
+                            <a href="#" class="icon fa-vcard-o"><span class="label">Icon</span></a>
+                            <h3>Front-end Development</h3>
+                        </header>
+
+                        <ul>
+                            <li>User-centered software design</li>
+                            <li>Accelerated Mobile/Web Pages</li>
+                            <li>Mobile-First/Api-First approach</li>
+                            <li>Progressive Web Applications</li>
+                            <li>Motion UI &amp; JS animations</li>
+                            <li>Modular UI design &amp; development</li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                    <div class="content">
+                        <header>
+                            <a href="#" class="icon fa-files-o"><span class="label">Icon</span></a>
+                            <h3> Back-end Development</h3>
+                        </header>
+                        <ul>
+                            <li>Microservice and Monolithic architecture</li>
+                            <li>Container based architecture (Swarm, Kubernetes)</li>
+                            <li>Best practices ( SOLID, DI, TDD, 12Factor App)</li>
+                            <li>Data engineering and Data Science</li>
+                            <li>IoT product architecture</li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                    <div class="content">
+                        <header>
+                            <a href="#" class="icon fa-floppy-o"><span class="label">Icon</span></a>
+                            <h3>DevOps and Cloud Infrastructure</h3>
+                        </header>
+                        <ul>
+                            <li>Cloud Solutions (AWS, Google, Azure, DigitalOcean, Alibaba)</li>
+                            <li>Multi Cloud/Cloud agnostic approach</li>
+                            <li>Infrastructure as Code</li>
+                            <li>CI/CD configuration</li>
+                            <li>Disaster Recovery automation</li>
+                            <li>Log aggregation and analysis</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+    <section id="ctamainsaas" class="wrapper">
+        <div class="inner">
+            <h2>SaaS Web Application Development</h2>
+            <p>We provide Saas software development delivering a software service through the web, its a cloud model,it's a cloud model that facilitates the process of setting up and managing software while websites are online channels to display any content through the web</p>
+            <a href="#" class="MCAlignHref">Read More..</a>
+        </div>
+    </section>
+    <br />
+    <br />
+
+    <div class="inner">
+        <div class="content">
+            <section class="MCwrapped">
+                <h3>Custom Software Solutions</h3>
+                <p>We offer bespoke custom software development tailored to the exact requirements of your company, Custom software applications.We offer targeted software solutions geater scalability and increased reliability. </p>
+            </section>
+            <div class="hero-img mb-md50 MCImgwrap">
+                <img src="images/custom-software-development.png" alt="">
+            </div>
+
+        </div>
+    </div>
+    <section>
+        <div class="inner">
+            <div class="content">
+                <section>
+                    <div class="hero-img mb-md50 MCImgwrap MCImgwrap2">
+                        <img src="images/erp.png" alt="">
+                    </div>
+                </section>
+
+
+            </div>
+        </div>
+        <div class="inner">
+            <div class="content">
+                <div class="MCwrapped">
+                    <h3>Custom Software Solutions</h3>
+                    <p>We offer bespoke software solutions tailored to the exact requirements of your company, Custom software applications represents a better choice than the standard solutions. We specifically design bespoke softwrae that is unique to you. Your systesm/software can be fully integrated with your processes, with the exact feature that you need,and exactly the way you want it to work and function. We offer multi-tier architecture, that is scalable solutions as bespoke software is specifically designed with the long term IT plans of your company. We offer and a provider of a full package of software consultancy services, software design servicxes, IT outsourcing, development services, software design services,Company out sourcing bespoke website solutions & computing ect.</p>
+                </div>
+            </div>
+        </div>
+
+        <section id="ctamainquote" class="wrapper">
+            <div class="inner">
+                <h2>Quote</h2>
+                <p>Design is not just what it looks like and feels like.</p>
+                <p>Design is how it works.</p>
+                <p>"Steve Jobs"</p>
+            </div>
+
+        </section>
+        <div class="inner">
+            <div class="content">
+                <div class="hero-img mb-md50 MCImgwrapAdj MCImgwrapAdj2">
+                    <img src="images/Enterprise-Master-Patient-Index-Software.png" alt="">
+                </div>
+            </div>
+        </div>
+        <section>
+            <div class="inner">
+                <div class="content">
+                    <section class="MCwrapped">
+                        <h3>Custom Software Solutions</h3>
+                        <p>We offer bespoke software solutions tailored to the exact requirements of your company, Custom software applications represents a better choice than the standard solutions. We specifically design bespoke softwrae that is unique to you. Your systesm/software can be fully integrated with your processes, with the exact feature that you need,and exactly the way you want it to work and function. We offer multi-tier architecture, that is scalable solutions as bespoke software is specifically designed with the long term IT plans of your company. We offer and a provider of a full package of software consultancy services, software design servicxes, IT outsourcing, development services, software design services,Company out sourcing bespoke website solutions & computing ect.</p>
+                    </section>
+                    <div class="hero-img mb-md50 MCImgwrapAdj MCImgwrapAdj2">
+                        <img src="images/SoftwareLifeCycle-300x300.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <section>
+                <section id="ctamainagile" class="wrapper">
+                    <div class="inner">
+                        <h2>Agile</h2>
+                        <p>
+                            Infralogix Systems embraces latest technologies and supporting development and creativity.
+
+                            In fralogix Systems creates bespoke systems using c# and .Net technologies, application integration
+
+                            Using the latest technologies, C#,ASP.NET MVC, T-SQL and MS SQL to develop technical solutions for complex problems.
+
+                            We also utilize other proven technologies such as in development include Javascript Frameworks and Libraries, Object Mapping technologies, N-Tier and N-Layeredarchitetcure, Microsoft Open Web Interface and WCF (NServiceBus) , Restfull Services
+                        </p>
+                    </div>
+
+                </section>
+
+                <div class="inner">
+                    <div class="content">
+                        <section class="MCwrapped">
+                            <h3>Founder - Co-Founder</h3>
+                            <p>We offer bespoke software solutions tailored to the exact requirements of your company, Custom software applications represents a better choice than the standard solutions. We specifically design bespoke softwrae that is unique to you. Your systesm/software can be fully integrated with your processes, with the exact feature that you need,and exactly the way you want it to work and function. We offer multi-tier architecture, that is scalable solutions as bespoke software is specifically designed with the long term IT plans of your company. We offer and a provider of a full package of software consultancy services, software design servicxes, IT outsourcing, development services, software design services,Company out sourcing bespoke website solutions & computing ect.</p>
+                        </section>
+                        <div class="hero-img mb-md50 MCImgwrapAdj">
+                            <img src="images/pico1.jpg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+            <section id="ctamainculture" class="wrapper">
+                <div class="inner">
+                    <h2>.Culture</h2>
+                    <p>
+                        Infralogix Systems embraces latest technologies and supporting development and creativity.
+
+                        In fralogix Systems creates bespoke systems using c# and .Net technologies, application integration
+
+                        Using the latest technologies, C#,ASP.NET MVC, T-SQL and MS SQL to develop technical solutions for complex problems.
+
+                        We also utilize other proven technologies such as in development include Javascript Frameworks and Libraries, Object Mapping technologies, N-Tier and N-Layeredarchitetcure, Microsoft Open Web Interface and WCF (NServiceBus) , Restfull Services
+                    </p>
+                </div>
+
+            </section>
+
+            <section id="ctamaintech" class="wrapper">
+                <div class="inner">
+                    <h2>Technologies</h2>
+                </div>
+                <div class="inner">
+                    <h2>FAQ</h2>
+                </div>
+
+                <div class="ReadMore">
+                    <input type="checkbox" name="name" value="" class="CheckShow" />
+                    <p>
+                        <span class="MCFaqBtn">HOW TO DESIGN A WEBSITE AND WHAT IS WEBSITE DESIGN?</span>
+                        <span id="mbReadMore">
+                            
+
+                            <span class="MCLiner">
+                                <span class="MClistItem">
+                                    Website design, also referred to as web design is the skill of creating presentations of content (usually hypertext or hypermedia) that is delivered to an end-user through the World Wide Web, by way of a Web browser or other Web-enabled software like Internet television clients, microblogging clients and RSS readers.
+                                </span>
+                            </span>
+                           
+
+                            <span class="MCLiner">
+                                <span class="MClistItem">
+                                    Website design is similar (in a very simplistic way) to traditional print publishing. Every website is an information display container, just as a book; and every web page is like the page in a book. However, web design uses a framework based on digital code and display technology to construct and maintain an environment to distribute information in multiple formats.
+                                </span>
+                            </span>
+                            
+
+                            <span class="MCLiner">
+                                <span class="MClistItem">
+                                    Taken to its fullest potential, web design is undoubtedly the most sophisticated and increasingly complex method to support communication in today's world.
+                                </span>
+                            </span>
+                           
+                            <span class="MCLiner">
+                                <span class="MClistItem">
+                                    Website design is a kind of graphic design intended for development and styling of objects of the Internet's information environment to provide them with high-end consumer features and aesthetic qualities. The offered definition separates web design from web programming, emphasizing the functional features of a web site, as well as positioning web design as a kind of graphic design. Website Design.co.za is a leading website design solutions provider.
+                                </span>
+                            </span>
+                        </span>
+                    </p>
+                </div>
+
+                <div class="ReadMore">
+                    <input type="checkbox" name="name" value="" class="CheckShow" />
+                    <p>
+                        <span class="MCFaqBtn">What Is Custom Software Development and what are the advantages?</span>
+                        <img class="arrrow-down" src="images//Arrow right - grey.svg" alt="ARROW DOWN" />
+                        <span id="mbReadMore">
+                            <span class="MCLiner">
+                                <span class="MClistItem MClistItem2">
+                                    Custom software development is the process of designing software applications that meet the specific needs of an individual or a company. Unlike commercial off-the-shelf (COTS) software, custom options are usually targeting specific problems
+                                </span>
+                            </span>
+                            <span class="MCReadMoreH1">
+                                5 Advantages of Custom Software Development
+                            </span>
+                            <span class="MCReadMoreH1">
+                                1. Targeted Solutions
+                            </span>
+                            <span class="MCLiner">
+                                <span class="MClistItem">
+                                    Probably the most important reason to invest in custom software development is to develop a product that addresses your exact needs. It is not unusual for businesses to choose an off-the-shelf software option just to realize that it is unsuitable for them.
+                                </span>
+                            </span>
+                            <span class="MCLiner">
+                                <span class="MClistItem">
+                                    Every business is unique and it is hard to find a one-size-fits-all solution when it comes to software. Choosing to work with tailored products not only gives space to grow, but it also means you are serious about your company’s success.
+                                </span>
+                            </span>
+
+                            <span class="MCReadMoreH1">
+                                2. Greater Scalability
+                            </span>
+
+                            <span class="MCLiner">
+                                <span class="MClistItem">
+                                    As your business grows, so do your needs. Purchasing an off-the-shelf software solution will become a problem once it is not able to support your business or becomes too expensive to license.
+                                </span>
+                            </span>
+                            <span class="MCLiner">
+                                <span class="MClistItem">
+                                    Off-the-shelf solutions may be a better fit for small companies in their startup phase of the business cycle. When operations are not yet stable, the focus is on making the company viable.
+                                </span>
+                            </span>
+                            <span class="MCLiner">
+                                <span class="MClistItem">
+                                    Developing a solution that is able to grow and scale your business processes is a savvy choice. You don’t want your capacity for growth to be limited by mere software. If you can afford the investment, it will be worth it.
+                                </span>
+                            </span>
+
+                            <span class="MCReadMoreH1">
+                                3. Software Integration
+                            </span>
+
+                            <span class="MCLiner">
+                                <span class="MClistItem">
+                                    Using custom software development, you can integrate your new software with already existing software to refine business processes. COTS software may lead to errors and as a result, a loss in productivity.
+                                </span>
+                            </span>
+                            <span class="MCLiner">
+                                <span class="MClistItem">
+                                    Custom software mitigates the chance of integration issues and can easily fit within any business’s software ecosystem.
+                                </span>
+                            </span>
+
+                            <span class="MCReadMoreH1">
+                                4. Hardware Costs
+                            </span>
+                            <span class="MCLiner">
+                                <span class="MClistItem">
+                                    Licensing off-the-shelf software often means having to purchase additional hardware for it to run efficiently. This can sometimes lead to a pretty big bill at the end of the day.
+                                </span>
+                            </span>
+                            <span class="MCLiner">
+                                <span class="MClistItem">
+                                    With tailor-made software, current hardware capabilities are taken into consideration, helping you save money and avoid extra costs. Custom software is developed in a way that supports your business so you’re not forced to adapt to what’s available.
+                                </span>
+                            </span>
+                            <span class="MCLiner">
+                                <span class="MClistItem">
+                                    The development and integration of custom software should consider every aspect of your business in order to make implementing the software as seamless as possible.
+                                </span>
+                            </span>
+                            <span class="MCReadMoreH1">
+                                5. Increased Reliability
+                            </span>
+
+                            <span class="MCLiner">
+                                <span class="MClistItem">
+                                    When you are purchasing off-the-shelf software, you are dependent on the company that has developed it. The pricing, terms and conditions, and future of the business, are all out of your hands.
+                                </span>
+                            </span>
+                            <span class="MCLiner">
+                                <span class="MClistItem">
+                                    If that company suddenly goes bankrupt or stops updating the product, you will have a nerve-racking and limited time to find a new software provider.
+                                </span>
+                            </span>
+                            <span class="MCLiner">
+                                <span class="MClistItem">
+                                    With custom software, you can use it as long as you like and the way you like. Of course, there are maintenance costs to consider. But overall, you’ll have far less to worry about.
+                                </span>
+                            </span>
+                        </span>
+                    </p>
+                </div>
+
+                <div class="ReadMore">
+                    <input type="checkbox" name="name" value="" class="CheckShow" />
+                    <p>
+                        <span class="MCFaqBtn">Custom Software vs. Off-the-Shelf: Side-by-Side Comparison</span>
+                        <img class="arrrow-down" src="images//Arrow right - grey.svg" alt="ARROW DOWN" />
+                        <span id="mbReadMore">
+                            <span class="MCLiner">
+                                <span class="MClistItem MClistItem2">
+                                    Not sure if custom software is right for you? Here, you’ll see a side-by-side comparison comparing the pros and cons of custom software versus off-the-shelf software. 
+                                </span>
+                            </span>
+                            <span class="MCReadMoreH1">
+                                Speed
+                            </span>
+                            <span class="MCLiner">
+                                <span class="MClistItem">
+                                    While off-the-shelf software isn’t made to be unique, this makes it easier to get done. This is why it’s called off-the-shelf in the first place. When you see products on the shelves of your local store, you likely see several copies of the same product because they’re mass-produced at record speed.
+                                </span>
+                            </span>
+
+                            <span class="MCReadMoreH1">
+                                Price
+                            </span>
+                            <span class="MCLiner">
+                                <span class="MClistItem">
+                                    Adding bells and whistles will almost always hike up costs, whether that’s extra pickles on your burger or a modification for custom software. For that reason, using COTS software will be decidedly budget-friendly.
+                                </span>
+                            </span>
+                            <span class="MCReadMoreH1">
+                                Customization
+                            </span>
+                            <span class="MCLiner">
+                                <span class="MClistItem">
+                                    Custom software is designed to meet specific challenges for a particular business’s or individual’s needs. In effect, the software never fails to meet requirements and is altered to scale with you and/or your business.
+                                </span>
+                            </span>
+                            <span class="MCReadMoreH1">
+                                Community
+                            </span>
+
+                            <span class="MCLiner">
+                                <span class="MClistItem">
+                                    Because custom software is built towards specificity and there’s only a limited amount of the software, you won’t get the chance to check a million or so reviews of the product before purchasing.
+                                </span>
+                            </span>
+                            <span class="MCLiner">
+                                <span class="MClistItem">
+                                    A million might be a bit of an exaggeration. But for most people, there is quite a bit of relief when several people just like themselves have reviewed a product and rated it positively.
+                                </span>
+                            </span>
+                            <span class="MCLiner">
+                                <span class="MClistItem">
+                                    Further, as the product does not have wide accessibility, there won’t be a community when you ever want to discuss or ask questions about your custom software. In these cases at least, COTS software offers more community.
+                                </span>
+                            </span>
+                            <span class="MCReadMoreH1">
+                                Competition
+                            </span>
+                            <span class="MCLiner">
+                                <span class="MClistItem">
+                                    Custom software can give you a competitive advantage in the market. Once you spot how to refine your business by modernizing or customizing as necessary, custom software can help you stand out against your competitors.
+                                </span>
+                            </span>
+
+                        </span>
+                    </p>
+                </div>
+
+                <div class="ReadMore">
+                    <input type="checkbox" name="name" value="" class="CheckShow" />
+                    <p>
+                        <span class="MCFaqBtn">
+                            How Much Does It Cost to Develop a Custom Software?
+                        </span>
+                        <img class="arrrow-down" src="images//Arrow right - grey.svg" alt="ARROW DOWN" />
+                        <span id="mbReadMore">
+                            <span class="MCLiner">
+                                <span class="MClistItem MClistItem2">
+                                    The price of custom software development will vary greatly depending on what you have built. A number of factors will influence the final cost of your custom software like:
+                                </span>
+                            </span>
+                            <span class="MCLiner"><span class="MClistItem">software size</span></span>
+                            <span class="MCLiner"><span class="MClistItem">data migration</span></span>
+                            <span class="MCLiner"><span class="MClistItem">design</span></span>
+                            <span class="MCLiner"><span class="MClistItem">integration with other software</span></span>
+                            <span class="MCLiner"><span class="MClistItem">complexity</span></span>
+                        </span>
+                    </p>
+                </div>
+            </section>
+        </section>
+    </section>
+
+
+
+    <div class="MCcopywrap MCcopywrap2">
+        <a class="MCAlignHref">&copy; Copyright 2021 @ Infralogix Systems</a>.
+    </div>
+
+
+    <div style="display:none;">
+        <audio src="audio.wav" preload="auto" controls autoplay loop>
+            <source src="audio/LastLoveonEarth.ogg" type="audio/ogg">
+            <source src="audio/LastLoveonEarth.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+
+                var panel = this.nextElementSibling;
+                {
+                    panel.style.display = "none";
+                }
+            });
+        }
+    </script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        //Get the button =======================================================Change to whatsapp api functionality
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        //$(document).ready(function () {
+        //    if ($('body').width() < 1150 || $('body').width() == 1150) {
+        //        $(window).scroll(function () {
+        //            if ($(this).scrollTop() < 100) {
+        //                $('#header').fadeIn();
+        //            } else {
+        //                $('#header').fadeOut();
+        //            }
+        //        });
+        //    }
+        //});
+
+
+    </script>
+
+
+</body>
+</html>
